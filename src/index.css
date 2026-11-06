@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+    @apply bg-zinc-950 text-zinc-200 antialiased;
+    /* Desktop app, not a web page: no rubber-band scroll or text-select on chrome. */
+    overscroll-behavior: none;
+  }
+  code,
+  pre,
+  textarea.font-mono {
+    font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full border-2 border-solid border-transparent bg-zinc-700 bg-clip-padding;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::selection {
+    @apply bg-purple-600 text-white;
+  }
+}
