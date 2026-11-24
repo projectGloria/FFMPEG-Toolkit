@@ -1,0 +1,9 @@
+id = "FFMPEG-Toolkit"
+name = "FFMPEG-Toolkit"
+version = "0.2.0"
+main_exe = "ffmpeg-toolkit.exe"
+icon = "src-tauri/icons/icon.ico"
+accent = "#A855F7"
+description = "Windows Explorer context-menu manager and sequential job queue for user-defined FFmpeg commands."
+data_folders = ['%APPDATA%\com.ffmpegtoolkit.app', '%LOCALAPPDATA%\com.ffmpegtoolkit.app']
+needs_webview2 = true
